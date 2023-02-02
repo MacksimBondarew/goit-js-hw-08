@@ -18,7 +18,7 @@ function onInputFormLocalSet() {
 //Відправляємо форму на базу даних і вона просто чиститься
 function submitData(e) {
     e.preventDefault();
-    console.log(localStorage.getItem(STORAGE_KEY));
+    console.log(JSON.parse(localStorage.getItem(STORAGE_KEY)));
     localStorage.removeItem(STORAGE_KEY);
     this.reset();
 }
